@@ -11,9 +11,16 @@ import UIKit
 class GameView: BaseView<[GameModel]> {
     var viewModel: GameViewModelInterface!
     
-    @IBOutlet weak var quizView: QuizView!
+    @IBOutlet weak var view: UIView!
+    
+    private var quizView: QuizView {
+        return view as! QuizView
+    }
     
     func bindData() {
-        //TODO: load view with data
+        guard let data = data else {
+            return
+        }
+        quizView.data = data[0]
     }
 }
