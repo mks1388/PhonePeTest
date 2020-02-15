@@ -71,6 +71,11 @@
                                     <constraint firstAttribute="bottom" secondItem="FsP-7A-1iQ" secondAttribute="bottom" id="vXU-c1-hWj"/>
                                     <constraint firstItem="ZwX-do-g6j" firstAttribute="centerX" secondItem="xNo-z2-Uww" secondAttribute="centerX" id="xxR-fB-39P"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="answerCV" destination="ZwX-do-g6j" id="kty-nK-rws"/>
+                                    <outlet property="logoView" destination="Y3Y-xk-B8N" id="HdO-u2-9ua"/>
+                                    <outlet property="optionsCV" destination="FsP-7A-1iQ" id="6yc-9t-SxO"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.97254901959999995" green="0.70196078429999997" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -81,6 +86,9 @@
                             <constraint firstItem="xNo-z2-Uww" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f4Q-aF-GJN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outlet property="quizView" destination="xNo-z2-Uww" id="e92-56-vbT"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -8,11 +8,13 @@
 
 import UIKit
 
-class QuizView: UIView {
+class QuizView: BaseView<GameModel> {
 
     @IBOutlet weak var logoView: UIImageView!
     @IBOutlet weak var answerCV: UICollectionView!
     @IBOutlet weak var optionsCV: UICollectionView!
     
-
+    func bindData() {
+        //TODO: load view here
+    }
 }
